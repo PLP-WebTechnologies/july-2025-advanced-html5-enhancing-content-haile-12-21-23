@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="An enhanced HTML5 page with structured content and a validated form."/>
+
+    <title>Enhanced HTML5 Page</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+        header, footer{
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        main{
+            padding: 2rem;
+
+        }
+        section{
+            margin-bottom: 2rem;
+        }
+        table, th, td{
+        border-collapse: collapse;
+            border: 1px solid #aaa;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        label{
+            display: block;
+            margin-top: 1rem;
+        }
+        input, textarea, select{
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.3rem;
+        }
+    </style>
+</head>
+
+<body>
+<!-- header section -->
+<header>
+    <h1>My enhanced HTML5 Web Page.</h1>
+    <p>Showcasing Lists, Tables, Media and Validated Form.</p>
+</header>
+
+<!-- Main section -->
+ <main>
+    <!-- Lists Section -->
+    <section>
+<h2>Technologies I use.</h2>
+<h3>Programming Lanuages.</h3>
+<ul>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>Dart</li>
+    <li>HTML & CSS</li>
+</ul>
+<h3>Daily workflow</h3>
+<ol>
+    <li>Check Tasks on ClickUp.</li>
+    <li>Code for assigned feature.</li>
+    <li>Push updates to GitHub</li>
+    <li>Attend daily stand-up</li>
+</ol>
+    </section>
+    <!-- Table section -->
+     <section>
+        <h2>Project Contributions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Role</th>
+                    <th>Tech Stack</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Gojo Dating App</td>
+                <td>Flutter Developer</td>
+                <td>Dart, Firebase and NodeJS</td>
+            </tr>
+            <tr>
+                <td>Water Meter Sysytem</td>
+                <td>Flull Stack </td>
+                <td>Arduino</td>
+            </tr>
+            <tr>
+                <td>Micro Job Board</td>
+                <td>MERN Stack Developer</td>
+                <td>MongoDB, Express, React, Node</td>
+            </tr>
+        </table>
+     </section>
+     <!-- Media Section -->
+      <section>
+        <!--  -->
+        <h2>Project Demo and Profiles</h2>
+        <figure><img src="https://via.placeholder.com/600x300" alt="Project Screenhot">
+                <figcaption>Sample Project Screenshot</figcaption>
+
+        </figure>
+<!-- Video -->
+ <video width="100%" controls src="sample-video.mp4">        Your browser does not support the video tag.
+</video>
+
+<!-- Audio -->
+<audio controls src="sample-audio.mp3">Your browser does not support the audio tag.
+</audio>
+      </section>
+
+      <!-- Form Section -->
+       <section>
+        <h2>Contact Me</h2>
+        <form action="#"  method="POST">
+            <fieldset>
+                <legend>Personal Iinformation</legend>
+
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Haile A." minlength="3" autocomplete="name">
+
+                <label for="email">Email </label>
+                <input type="email" id="email" name="email" required placeholder="Haile A." minlength="3" autocomplete="name">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="^\+?\d{10,15}$" required placeholder="251912345...."  autocomplete="tel">
+            </fieldset>
+            <!-- Detail info -->
+             <fieldset>
+                <legend>Account Details</legend>
+
+                <label for="username">User Name*</label>
+                <input type="text" id="username" name="username" required minlength="4" autocomplete="username">
+
+                <label for="password">Password*</label>
+                <input type="password" id="password" name="password" required minlength="6" autocomplete="new-password">
+
+                <label for="bio">Short Bio</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell me about yourself...." > </textarea>
+
+             </fieldset>
+             <fieldset>
+             <!-- References -->
+              <label for="contactmethod">Preferred Contact Method</label>
+              <select id="contactmethod" name="contactmethod">
+                  <option value="email">Email</option>
+                  <option value="phone">Phone</option>
+                  <option value="chat">Chat</option>
+              </select>
+              <label >Subscribe to NewsLetter?</label>
+          <label><input type="radio" name="subscribe" value="yes" checked/> Yes</label>
+          <label><input type="radio" name="subscribe" value="no"/> No</label>
+        <label>
+            <input type="checkbox" name="terms" required/> I agree to the Terms & Conditions *
+          </label>
+          </fieldset>
+
+        <input type="submit" value="Submit Form"/>
+
+        </form>
+       </section>
+ </main>
+   <footer>
+    <p>&copy; 2025 Hailemariam Terefe. All Rights Reserved.</p>
+  </footer
+</body>
+</html>
